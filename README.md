@@ -24,6 +24,10 @@ Each board size has its own directory containing an index and multiple Markdown 
 
 Solutions are divided into smaller files to keep individual pages manageable and make browsing easier on GitHub. Open the index in each directory to browse the solutions by number.
 
+## Symmetry
+
+Solutions are listed with symmetry-equivalent arrangements eliminated. Arrangements that differ only by symmetry are counted as a single solution.
+
 ## Solution Format
 
 Each solution is displayed as ASCII art using a fixed-width font. 
