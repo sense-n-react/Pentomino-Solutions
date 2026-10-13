@@ -3,7 +3,7 @@
 Total: 2 solutions
 
 
-# Solutions 1–2
+# 3x20 Solutions 1–2
 
 ## # 1
 

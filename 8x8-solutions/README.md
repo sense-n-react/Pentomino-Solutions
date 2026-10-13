@@ -3,7 +3,7 @@
 Total: 65 solutions
 
 
-# Solutions 1–65
+# 8x8 Solutions 1–65
 
 ## # 1
 
