@@ -4,6 +4,8 @@ This repository contains pentomino tiling solutions for various board sizes.
 
 Each solution is represented as ASCII art in Markdown, allowing the boards to be viewed directly on GitHub without any additional tools.
 
+A color-coded HTML version is also available: **[Pentomino Solutions (HTML)](https://sense-n-react.github.io/PentominoSolutions/)**. It displays correctly on smartphones as well.
+
 ## 2D Boards
 
 * [6×10 Board](6x10-solutions/README.md)

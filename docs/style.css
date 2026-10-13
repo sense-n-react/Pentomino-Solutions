@@ -1,0 +1,77 @@
+:root {
+  --bg: #ffffff;
+  --fg: #1f2328;
+  --muted: #59636e;
+  --link: #0969da;
+  --line: #1f2328;
+  --card: #f6f8fa;
+  --border: #d1d9e0;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0d1117;
+    --fg: #e6edf3;
+    --muted: #9198a1;
+    --link: #4493f8;
+    --line: #0d1117;
+    --card: #151b23;
+    --border: #3d444d;
+  }
+}
+
+body {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 16px;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+a { color: var(--link); }
+nav { font-size: 14px; color: var(--muted); }
+h1 { font-size: 24px; }
+
+.pages { border-collapse: collapse; white-space: nowrap; }
+.pages td { border: 1px solid var(--border); padding: 6px 12px; }
+@media (max-width: 480px) { .pages { font-size: 12px; } .pages td { padding: 4px 3px; } }
+.pager { display: flex; gap: 16px; }
+
+.solutions {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(max(var(--card-width), 240px), 100%), 1fr));
+  gap: 16px;
+}
+figure { margin: 0; padding: 8px; background: var(--card); border-radius: 6px; }
+figcaption { font-size: 14px; margin-bottom: 4px; }
+figcaption a { color: var(--muted); text-decoration: none; }
+/* 3D の層は横一列に並べ、入りきらない画面ではカードの中で横スクロールする */
+.layers { display: flex; gap: 8px; overflow-x: auto; padding-bottom: 4px; }
+.layers svg { display: block; flex: none; }
+.layers svg:only-child { flex: initial; max-width: 100%; height: auto; }
+
+svg .wall  { fill: none; stroke: var(--line); stroke-width: 2; stroke-linecap: square; }
+svg .frame { fill: none; stroke: var(--line); stroke-width: 2; }
+svg text {
+  font: bold 11px sans-serif;
+  text-anchor: middle;
+  dominant-baseline: central;
+  fill: #000;
+  opacity: 0.75;
+}
+
+/* 複数の層にまたがるピースの色 */
+.p-F { fill: #e5534b; }
+.p-I { fill: #f0883e; }
+.p-L { fill: #d4a72c; }
+.p-N { fill: #a2d44c; }
+.p-P { fill: #4ac26b; }
+.p-T { fill: #3cbfae; }
+.p-U { fill: #54aeff; }
+.p-V { fill: #6c8cf5; }
+.p-W { fill: #a371f7; }
+.p-X { fill: #e26cc8; }
+.p-Y { fill: #c9a27e; }
+.p-Z { fill: #b5476f; }
+.flat { fill: #c9d3dc; }
+.hole { fill: var(--bg); }
